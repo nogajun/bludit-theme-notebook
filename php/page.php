@@ -32,15 +32,15 @@
           <ul class="d-inline-flex list-unstyled">
             <!-- category -->
             <?php if ($page->category()) : ?>
-              <li class="border rounded p-1 mx-1 entry__categories">
-                <a href="<?php echo DOMAIN_CATEGORIES . $page->categoryKey() ?>" class="text-body text-decoration-none"><?php echo $page->category() ?></a>
+              <li class="border rounded p-1 me-2 entry__categories">
+                <a href="<?php echo DOMAIN_CATEGORIES . $page->categoryKey() ?>" class="text-body text-decoration-none"><i class="bi bi-collection-fill me-1"></i><?php echo $page->category() ?></a>
               </li>
             <?php endif ?>
             <!-- tags -->
             <?php if (!empty($page->tags(true))) : ?>
               <?php foreach ($page->tags(true) as $tagKey => $tagName) : ?>
-                <li class="border rounded p-1 mx-1 entry__tags">
-                  <a href="<? echo DOMAIN_TAGS . $tagKey; ?>" class="text-body text-decoration-none"><?php echo $tagName; ?></a>
+                <li class="border rounded p-1 me-2 entry__tags">
+                  <a href="<? echo DOMAIN_TAGS . $tagKey; ?>" class="text-body text-decoration-none"><i class="bi bi-hash"></i><?php echo $tagName; ?></a>
                 </li>
               <?php endforeach; ?>
             <?php endif; ?>

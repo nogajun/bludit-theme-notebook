@@ -1,5 +1,5 @@
   <!-- hero -->
-  <div class="py-1 py-md-3 py-xxl-5 text-center shadow header__hero">
+  <div class="py-1 py-md-3 py-xxl-5 text-center shadow-sm header__hero">
     <h1 class="py-1 py-md-3 py-xxl-5 fw-bold"><?php echo $site->title() ?></h1>
   </div>
 
@@ -8,7 +8,7 @@
     <div class="row">
       <div class="col col-xxl-9 mx-auto">
         <!-- menu -->
-        <div class="nav-scroller py-2 m-xxl-2 main__nav">
+        <div class="nav-scroller pt-3 py-xxl-3 my-xxl-3 main__nav">
           <nav class="nav d-flex justify-content-around">
             <?php
             foreach ($categories->db as $key => $fields) {
@@ -27,7 +27,7 @@
           } ?>
           <!-- Load Bludit Plugins: Page Begin -->
           <?php Theme::plugins('pageBegin'); ?>
-          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 gx-4 gy-5">
             <?php foreach ($content as $page) : ?>
               <!-- card -->
               <article class="card col border-0">

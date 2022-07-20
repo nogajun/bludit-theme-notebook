@@ -21,7 +21,7 @@
   --sns-hatena: #00a4de;
   --sns-line: #06c755;
   --sns-pocket: #ed4255;
-  --base-font-family: "Noto Sans JP", "Noto Sans CJK JP", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  --base-font-family: "Lato","Noto Sans JP", "Noto Sans CJK JP", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 body {
@@ -46,7 +46,7 @@ a:hover {
 }
 
 .header__hero {
-  background-image: url("../img/geometric2.jpg");
+  background-image: url("../img/shapelined.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -92,7 +92,7 @@ a:hover {
   object-fit: cover;
 }
 
-.entry__header_info {
+.entry__header_info small {
   font-size: 0.75rem;
 }
 
@@ -147,7 +147,7 @@ a:hover {
   font-feature-settings: "palt";
   text-justify: inter-character;
   word-break: break-all;
-  overflow-wrap:break-word;
+  overflow-wrap: break-word;
   line-height: 2;
   margin-bottom: 1em;
 }
