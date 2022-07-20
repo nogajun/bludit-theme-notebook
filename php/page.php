@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row my-5">
 
-    <main class="col col-md-10 col-lg-8 col-xl-7 col-xxl-6 mx-auto">
+    <main class="col col-md-10 col-lg-8 col-xl-7 col-xxl-6 px-4 px-md-0 mx-auto">
       <article class="entry">
         <!-- Load Bludit Plugins: Page Begin -->
         <?php Theme::plugins('pageBegin'); ?>

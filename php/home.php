@@ -48,7 +48,7 @@
                   <img src="<?php echo ($page->user('profilePicture') ? $page->user('profilePicture') : Theme::src('img/noimg.png')) ?>" alt="Author" width="24px" height="24px" class="rounded-circle m-1 me-2">
                   <small class="align-text-bottom">
                     <span class="card-author"><?php echo $page->user('nickname'); ?></span><br>
-                    <time datetime="<?php echo $page->dateRaw('c') ?>" class="card-date"><?php echo $page->date(); ?></time>
+                    <time datetime="<?php echo $page->dateRaw('c') ?>" class="card-date text-muted"><?php echo $page->date(); ?></time>
                   </small>
                 </footer>
               </article>

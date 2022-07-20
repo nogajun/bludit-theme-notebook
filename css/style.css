@@ -76,7 +76,8 @@ a:hover {
 }
 
 .card-body,
-.card-footer {
+.card-footer,
+.card-footer small {
   font-size: 0.75rem;
 }
 
