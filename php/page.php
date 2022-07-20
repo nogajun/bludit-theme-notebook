@@ -9,7 +9,7 @@
           <?php if ($page->coverImage()) : ?>
             <figure>
               <picture>
-                <img src="<?php echo $page->coverImage(); ?>" class="w-100 shadow entry__cover">
+                <img src="<?php echo $page->coverImage(); ?>" class="entry__cover">
               </picture>
             </figure>
           <?php endif ?>

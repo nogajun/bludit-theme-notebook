@@ -1,6 +1,6 @@
   <!-- hero -->
-  <div class="py-1 py-md-3 py-xxl-5 text-center header__hero">
-    <h1 class="py-1 py-md-3 py-xxl-5">Centered hero</h1>
+  <div class="py-1 py-md-3 py-xxl-5 text-center shadow header__hero">
+    <h1 class="py-1 py-md-3 py-xxl-5 fw-bold"><?php echo $site->title() ?></h1>
   </div>
 
   <!-- card container -->
@@ -13,7 +13,7 @@
             <?php
             foreach ($categories->db as $key => $fields) {
               if ($fields['list']) {
-                echo '<a href="' . DOMAIN_CATEGORIES . $key . '" class="p-2">' . $fields['name'] . '</a>';
+                echo '<a href="' . DOMAIN_CATEGORIES . $key . '" class="p-2 fw-bold">' . $fields['name'] . '</a>';
               }
             }
             ?>

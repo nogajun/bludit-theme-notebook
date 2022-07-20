@@ -27,10 +27,28 @@
           endif;
           ?>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+
+        <!-- Custom search form if the plugin "search" is enabled -->
+        <?php if (pluginActivated('pluginSearch')) : ?>
+          <form class="d-flex">
+            <input id="search-input" class="form-control me-2" type="search" placeholder="<?php $language->p('Search') ?>" aria-label="Search">
+            <button class="btn btn-outline-success text-nowrap" type="submit"><?php $language->p('Search') ?></button>
+            <script>
+              function searchNow() {
+                var searchURL = "<?php echo Theme::siteUrl(); ?>search/";
+                window.open(searchURL + document.getElementById("search-input").value, "_self");
+              }
+              document.getElementById("search-input").onkeypress = function(e) {
+                if (!e) e = window.event;
+                var keyCode = e.keyCode || e.which;
+                if (keyCode == '13') {
+                  searchNow();
+                  return false;
+                }
+              }
+            </script>
+          </form>
+        <?php endif ?>
       </div>
     </div>
   </nav>

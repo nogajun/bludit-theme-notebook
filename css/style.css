@@ -4,7 +4,7 @@
 
 :root {
   --base-color: #f7f7f7;
-  --text-color: #444444;
+  --text-color: #333333;
   --sub-text-color: #ffffff;
   /* Light Blue 600 */
   --main-color: #039be5;
@@ -46,7 +46,9 @@ a:hover {
 }
 
 .header__hero {
-  background-color: #7f8c8d;
+  background-image: url("../img/geometric2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main__nav a {
