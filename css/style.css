@@ -110,7 +110,7 @@ a:hover {
   font-family: var(--base-font-family);
   font-weight: bold;
   font-size: 1rem;
-  line-height: 2;
+  line-height: 1.6;
 }
 
 .entry__content h1 {
@@ -217,6 +217,7 @@ a:hover {
   margin: 1.5em 1em;
   padding: 1em;
   white-space: pre-wrap;
+  tab-size: 2;
 }
 
 .entry__content table {
@@ -246,7 +247,7 @@ a:hover {
 }
 
 .entry__footer {
-  font-size: 0.9rem;
+  font-size: 0.875rem;
 }
 
 .entry__footer .entry__categories a::before {
@@ -258,9 +259,9 @@ a:hover {
 
 .entry__footer .entry__tags a::before {
   font-family: "bootstrap-icons";
-  content: "\F5AF";
+  content: "\F40A";
   vertical-align: -.125em;
-  margin-right: 2px;
+  margin-right: -2px;
 }
 
 .entry__footer .entry__categories,
