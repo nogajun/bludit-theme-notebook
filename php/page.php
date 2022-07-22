@@ -14,7 +14,7 @@
             </figure>
           <?php endif ?>
           <h1 class="mt-4 mt-md-5 mx-3 mx-md-0 h2 fw-bold"><?php echo $page->title(); ?></h1>
-          <div class="row mt-4 mt-md-3 mx-3 mx-md-0 d-flex align-items-start entry__header_info">
+          <div class="row mt-4 mt-md-3 mx-3 mx-md-0 d-flex align-items-end entry__header_info">
             <div class="col-1 me-3 me-md-0">
               <img src="<?php echo ($page->user('profilePicture') ? $page->user('profilePicture') : Theme::src('img/noimg.png')) ?>" height="32px" width="32px" alt="<?php echo $page->user('nickname'); ?>" class="rounded-circle">
             </div>
@@ -67,14 +67,15 @@
               <div class="col">
                 <h5 class="h5 mb-0 fw-bold">Author</h5>
                 <p class="h6 mb-3"><?php echo $page->user('firstName') . '  ' . $page->user('lastName'); ?></p>
-                <p class="h5 text-muted">
-                  <i class="bi bi-twitter"></i>
-                  <i class="bi bi-facebook"></i>
-                  <i class="bi bi-instagram"></i>
-                  <i class="bi bi-linkedin"></i>
-                  <i class="bi bi-mastodon"></i>
-                  <i class="bi bi-git"></i>
-                  <i class="bi bi-github"></i>
+                <p class="h5">
+                  <?php
+                  $socialnetwork = [ "twitter", "mastodon", "facebook", "instagram", "linkedin", "github"];
+                  foreach ($socialnetwork as $sns){
+                    if ($page->user($sns) != ""){
+                      echo '<a href="' . $page->user($sns) . '" class="text-muted"><i class="me-2 bi bi-' . $sns . '"></i></a>';
+                    }
+                  }
+                  ?>
                 </p>
               </div>
             </div>

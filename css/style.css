@@ -153,6 +153,43 @@ a:hover {
   margin-bottom: 1em;
 }
 
+.entry__content strong {
+  background: linear-gradient(transparent 60%, #e6ee9c 0%);
+}
+
+.entry__content strong.teal {
+  background: linear-gradient(transparent 60%, #b2dfdb 0%);
+}
+
+.entry__content strong.pink {
+  background: linear-gradient(transparent 60%, #f8bbd0 0%);
+}
+
+.entry__content .exlink {
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  padding: 0.7em;
+  margin: 0 0 1em 0;
+  position: relative;
+}
+
+.entry__content .exlink a::before {
+  content: "\F470";
+  font-family: bootstrap-icons;
+}
+
+.entry__content .exlink a {
+  text-decoration: underline;
+}
+
+.entry__content .exlink a:hover {
+  background: #e0e0e0;
+}
+
+.entry__content .exlink a:visited {
+  color: #666;
+}
+
 .entry__content a {
   text-decoration: underline;
 }
@@ -160,8 +197,8 @@ a:hover {
 .entry__content img {
   width: 100%;
   max-width: 100%;
-  height: auto;
   margin: 0.25rem;
+  height: auto;
 }
 
 .entry__content blockquote {
@@ -216,7 +253,7 @@ a:hover {
 }
 
 .entry__content pre {
-  font-family: Monaco, Consolas, Courier New, Courier, monospace, sans-serif;
+  font-family: Inconsolata, Monaco, Consolas, Courier New, Courier, monospace, sans-serif;
   font-size: 0.9rem;
   color: #fff;
   background-color: #333;
