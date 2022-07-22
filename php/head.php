@@ -14,4 +14,3 @@
 <meta name="theme-color" content="#ffffff">
 <!-- Load Bludit Plugins: Site head -->
 <?php Theme::plugins('siteHead'); ?>
-

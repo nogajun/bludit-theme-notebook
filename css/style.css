@@ -21,7 +21,7 @@
   --sns-hatena: #00a4de;
   --sns-line: #06c755;
   --sns-pocket: #ed4255;
-  --base-font-family: "Lato","Noto Sans JP", "Noto Sans CJK JP", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  --base-font-family: "Lato", "Noto Sans JP", "Noto Sans CJK JP", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 body {
@@ -93,7 +93,7 @@ a:hover {
   object-fit: cover;
 }
 
-.entry__header_info small {
+.entry__header_info {
   font-size: 0.75rem;
 }
 
@@ -153,9 +153,15 @@ a:hover {
   margin-bottom: 1em;
 }
 
+.entry__content a {
+  text-decoration: underline;
+}
+
 .entry__content img {
+  width: 100%;
   max-width: 100%;
-  margin: 0.5rem;
+  height: auto;
+  margin: 0.25rem;
 }
 
 .entry__content blockquote {
@@ -244,6 +250,12 @@ a:hover {
 
 .entry__content address {
   font-size: 0.9rem;
+}
+
+.entry__content iframe[title="YouTube video player"] {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
 }
 
 .entry__footer {

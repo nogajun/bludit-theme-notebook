@@ -2,6 +2,7 @@
 	"theme-data":
 	{
 		"name": "Notebook",
-		"description": "Notebook is a theme similar to note(blog platform). it is suitable for blog writing."
-	}
+		"description": "Notebook is a theme similar to note(blog service). it is suitable for blog writing."
+	},
+	"Home": "Home"
 }
