@@ -22,15 +22,14 @@
               <span><?php echo $page->user('nickname'); ?></span><br>
               <time datetime="<?php echo $page->dateRaw('c') ?>" class="text-muted"><?php echo $page->date(); ?></time>
             </div>
-            <div class="col">
-              <p class="h5 text-muted text-end">
-                <i class="bi bi-twitter"></i>
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-instagram"></i>
-                <i class="bi bi-linkedin"></i>
-                <i class="bi bi-mastodon"></i>
-                <i class="bi bi-git"></i>
-                <i class="bi bi-github"></i>
+            <div class="col share-button">
+              <p class="h5 text-end m-0 p-0 align-bottom">
+                <a href="https://twitter.com/share?url=<?php echo $page->permalink(); ?>&text=<?php echo $page->title(); ?>+%7C+<?php echo $site->title(); ?>%3A+" rel="nofollow" target="_blank" class="ms-2 share-button-twitter"><i class="bi bi-twitter"></i></a>
+                <a href="//www.facebook.com/share.php?u=<?php echo $page->permalink(); ?>" rel="nofollow" target="_blank" class="ms-2 share-button-facebook"><i class="bi bi-facebook"></i></a>
+                <a href="web+mastodon://share?text=<?php echo $page->title(); ?>+%7C+<?php echo $site->title(); ?>%3A+<?php echo $page->permalink(); ?>" rel="nofollow" target="_blank" class="ms-2 share-button-mastodon"><i class="bi bi-mastodon"></i></a>
+                <a href="//timeline.line.me/social-plugin/share?url=&text=" target="_blank" rel="nofollow" class="ms-2 share-button-line"><i class="bi bi-chat-fill"></i></a>
+                <a href="//b.hatena.ne.jp/add?mode=confirm&url=<?php echo $page->permalink(); ?>&title=<?php echo $page->title(); ?>+%7C+<?php echo $site->title(); ?>" rel="nofollow" class="ms-2 share-button-hatena"><i class="bi bi-bookmark-star-fill"></i></a>
+                <a href="//getpocket.com/edit?url=<?php echo $page->permalink(); ?>&title=<?php echo $page->title(); ?>+%7C+<?php echo $site->title(); ?>" rel="nofollow" target="_blank" class="ms-2 share-button-pocket"><i class="bi bi-bookmark-plus-fill"></i></a>
               </p>
             </div>
           </div>
@@ -67,12 +66,12 @@
               <div class="col">
                 <h5 class="h5 mb-0 fw-bold">Author</h5>
                 <p class="h6 mb-3"><?php echo $page->user('firstName') . '  ' . $page->user('lastName'); ?></p>
-                <p class="h5">
+                <p class="h5 share-button">
                   <?php
-                  $socialnetwork = [ "twitter", "mastodon", "facebook", "instagram", "linkedin", "github"];
-                  foreach ($socialnetwork as $sns){
-                    if ($page->user($sns) != ""){
-                      echo '<a href="' . $page->user($sns) . '" class="text-muted"><i class="me-2 bi bi-' . $sns . '"></i></a>';
+                  $socialnetwork = ["twitter", "mastodon", "facebook", "instagram", "linkedin", "github"];
+                  foreach ($socialnetwork as $sns) {
+                    if ($page->user($sns) != "") {
+                      echo '<a href="' . $page->user($sns) . '" class="share-button-'. $sns . '"><i class="me-2 bi bi-' . $sns . '"></i></a>';
                     }
                   }
                   ?>

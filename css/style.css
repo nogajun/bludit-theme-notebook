@@ -18,10 +18,14 @@
   /* brand color */
   --sns-twitter: #1d9bf0;
   --sns-facebook: #1877f2;
+  --sns-mastodon: #5358f2;
   --sns-hatena: #00a4de;
   --sns-line: #06c755;
   --sns-pocket: #ed4255;
-  --base-font-family: "Lato", "Noto Sans JP", "Noto Sans CJK JP", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  --sns-instagram: #833ab4;
+  --sns-linkedin: #0077b5;
+  --sns-github: #333333;
+  --base-font-family: "Lato", "Noto Sans JP", "Noto Sans CJK JP", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "Hiragino Kaku Gothic ProN", "BIZ UDPGothic", "メイリオ", Meiryo, sans-serif;
 }
 
 body {
@@ -38,6 +42,48 @@ a {
 a:hover {
   color: var(--text-color);
 }
+
+.share-button a{
+  color: #ccc;
+  transition: all .2s ease-in-out;
+}
+
+.share-button-twitter:hover {
+  color: var(--sns-twitter);
+}
+
+.share-button-facebook:hover {
+  color: var(--sns-facebook);
+}
+
+.share-button-mastodon:hover {
+  color: var(--sns-mastodon);
+}
+
+.share-button-line:hover {
+  color: var(--sns-line);
+}
+
+.share-button-hatena:hover {
+  color: var(--sns-hatena);
+}
+
+.share-button-pocket:hover {
+  color: var(--sns-pocket);
+}
+
+.share-button-instagram:hover {
+  color: var(--sns-instagram);
+}
+
+.share-button-linkedin:hover {
+  color: var(--sns-linkedin);
+}
+
+.share-button-github:hover {
+  color: var(--sns-github);
+}
+
 
 /* --------------------------------------------------------- */
 
