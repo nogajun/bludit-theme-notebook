@@ -32,7 +32,6 @@
         <?php if (pluginActivated('pluginSearch')) : ?>
           <form class="d-flex">
             <input id="search-input" class="form-control me-2" type="search" placeholder="<?php $language->p('Search') ?>" aria-label="Search">
-            <button onClick="searchNow()" class="btn btn-outline-success text-nowrap" type="submit"><?php $language->p('Search') ?></button>
             <script>
               function searchNow() {
                 var searchURL = "<?php echo Theme::siteUrl(); ?>search/";
