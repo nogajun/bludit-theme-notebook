@@ -36,10 +36,10 @@
                   <h3 class="card-title h5 fw-bold"><a href="<?php echo $page->permalink(); ?>" class="stretched-link"><?php echo $page->title(); ?></a></h3>
                   <p class="card-text">
                     <?php
-                    if (mb_strlen(strip_tags($page->contentBreak())) > 96) {
-                      echo mb_substr(strip_tags($page->contentBreak()), 0, 97) . '...';
+                    if (mb_strlen(strip_tags($page->contentBreak())) > 116) {
+                      echo mb_substr(strip_tags($page->contentBreak()), 0, 117) . '...';
                     } else {
-                      echo mb_substr(strip_tags($page->contentBreak()), 0, 100);
+                      echo mb_substr(strip_tags($page->contentBreak()), 0, 120);
                     }
                     ?>
                   </p>

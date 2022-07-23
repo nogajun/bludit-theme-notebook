@@ -18,10 +18,10 @@
       include(THEME_DIR_PHP . 'page.php');
       break;
     case 'tag':
-      include(THEME_DIR_PHP . 'home.php');
+      include(THEME_DIR_PHP . 'list.php');
       break;
     case 'category':
-      include(THEME_DIR_PHP . 'home.php');
+      include(THEME_DIR_PHP . 'list.php');
       break;
     default:
       include(THEME_DIR_PHP . 'home.php');

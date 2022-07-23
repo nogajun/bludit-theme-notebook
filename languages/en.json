@@ -4,5 +4,6 @@
 		"name": "Notebook",
 		"description": "Notebook is a theme similar to note(blog service). it is suitable for blog writing."
 	},
-	"Home": "Home"
+	"home": "Home",
+	"page-not-found": "Page not found"
 }

@@ -9,8 +9,6 @@
 <?php echo Theme::css('css/bootstrap.min.css'); ?>
 <?php echo Theme::css('css/style.css'); ?>
 <?php echo Theme::favicon('img/favicon.ico'); ?>
-<link rel="apple-touch-icon" sizes="180x180" href="<?php echo THEME_DIR . 'img/apple-touch-icon.png'; ?>">
-<link rel="mask-icon" href="<?php echo THEME_DIR . 'img//safari-pinned-tab.svg'; ?>" color="#5bbad5">
-<meta name="theme-color" content="#ffffff">
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo DOMAIN_THEME_IMG . 'apple-touch-icon.png'; ?>">
 <!-- Load Bludit Plugins: Site head -->
 <?php Theme::plugins('siteHead'); ?>
