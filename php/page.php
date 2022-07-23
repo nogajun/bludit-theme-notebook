@@ -22,7 +22,7 @@
               <img src="<?php echo ($page->user('profilePicture') ? $page->user('profilePicture') : Theme::src('img/author.png')) ?>" height="32px" width="32px" alt="<?php echo $page->user('nickname'); ?>" class="rounded-circle">
             </div>
             <!-- author data -->
-            <div class="col-3 col-md-4">
+            <div class="col-4">
               <span><?php echo $page->user('nickname'); ?></span><br>
               <time datetime="<?php echo $page->dateRaw('c') ?>" class="text-muted"><?php echo $page->date(); ?></time>
             </div>
