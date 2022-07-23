@@ -5,5 +5,6 @@
 		"description": "Notebookはブログサービスのnoteに似たテーマです。このテーマはブログを書くことに向いています。"
 	},
 	"home": "ホーム",
-	"page-not-found": "ページが見つかりません"
+	"page-not-found": "ページが見つかりません",
+	"author": "書いたひと"
 }

@@ -70,7 +70,7 @@
                 <img src="<?php echo ($page->user('profilePicture') ? $page->user('profilePicture') : Theme::src('img/author.png')) ?>" alt="<?php echo $page->user('nickname'); ?>" width="80px" height="80px" class="rounded-circle">
               </div>
               <div class="col">
-                <h5 class="h5 mb-0 fw-bold">Author</h5>
+                <h5 class="h5 mb-0 fw-bold"><?php $language->p('Author') ?></h5>
                 <p class="h6 mb-3"><?php echo $page->user('firstName') . '  ' . $page->user('lastName'); ?></p>
                 <p class="h5 share-button">
                   <?php
