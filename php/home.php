@@ -45,7 +45,7 @@
                   </p>
                 </section>
                 <footer class="card-footer border-0  d-inline-flex mt-2 p-0  bg-white">
-                  <img src="<?php echo ($page->user('profilePicture') ? $page->user('profilePicture') : Theme::src('img/noimg.png')) ?>" alt="Author" width="24px" height="24px" class="rounded-circle m-1 me-2">
+                  <img src="<?php echo ($page->user('profilePicture') ? $page->user('profilePicture') : Theme::src('img/author.png')) ?>" alt="Author" width="24px" height="24px" class="rounded-circle m-1 me-2">
                   <small class="align-text-bottom">
                     <span class="card-author"><?php echo $page->user('nickname'); ?></span><br>
                     <time datetime="<?php echo $page->dateRaw('c') ?>" class="card-date text-muted"><?php echo $page->date(); ?></time>

@@ -19,7 +19,7 @@
           <div class="row mt-4 mt-md-3 mx-3 mx-md-0 d-flex align-items-end entry__header_info">
             <!-- author icon -->
             <div class="col-1 me-3 me-md-0">
-              <img src="<?php echo ($page->user('profilePicture') ? $page->user('profilePicture') : Theme::src('img/noimg.png')) ?>" height="32px" width="32px" alt="<?php echo $page->user('nickname'); ?>" class="rounded-circle">
+              <img src="<?php echo ($page->user('profilePicture') ? $page->user('profilePicture') : Theme::src('img/author.png')) ?>" height="32px" width="32px" alt="<?php echo $page->user('nickname'); ?>" class="rounded-circle">
             </div>
             <!-- author data -->
             <div class="col-3 col-md-4">
@@ -67,7 +67,7 @@
           <div class="entry__authorbox mt-4">
             <div class="row d-flex align-items-start">
               <div class="col-3 col-md-2">
-                <img src="<?php echo ($page->user('profilePicture') ? $page->user('profilePicture') : Theme::src('img/noimg.png')) ?>" alt="<?php echo $page->user('nickname'); ?>" width="80px" height="80px" class="rounded-circle">
+                <img src="<?php echo ($page->user('profilePicture') ? $page->user('profilePicture') : Theme::src('img/author.png')) ?>" alt="<?php echo $page->user('nickname'); ?>" width="80px" height="80px" class="rounded-circle">
               </div>
               <div class="col">
                 <h5 class="h5 mb-0 fw-bold">Author</h5>
