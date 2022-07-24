@@ -32,7 +32,7 @@
             <article class="card my-3 border-0">
               <div class="row d-flex align-items-stretch g-0">
                 <div class="col-md-3">
-                  <img class="card-img-list" src="<?php echo ($page->coverImage() ? $page->coverImage() : Theme::src('img/noimg.png')) ?>" alt="">
+                  <img class="card-img-list" src="<?php echo ($page->coverImage() ? $page->coverImage() : Theme::src('img/noimg.webp')) ?>" alt="">
                 </div>
                 <div class="col-md-9">
                   <section class="card-body p-0 p-md-3 pt-3">
@@ -48,7 +48,7 @@
                     </p>
                   </section>
                   <footer class="card-footer border-0  d-inline-flex mt-2 mt-md-0 p-0 px-md-3  bg-white">
-                    <img src="<?php echo ($page->user('profilePicture') ? $page->user('profilePicture') : Theme::src('img/author.png')) ?>" alt="Author" width="32px" height="32px" class="rounded-circle me-2">
+                    <img src="<?php echo ($page->user('profilePicture') ? $page->user('profilePicture') : Theme::src('img/author.webp')) ?>" alt="Author" width="32px" height="32px" class="rounded-circle me-2">
                     <small class="align-text-bottom">
                       <span class="card-author"><?php echo $page->user('nickname'); ?></span><br>
                       <time datetime="<?php echo $page->dateRaw('c') ?>" class="card-date text-muted"><?php echo $page->date(); ?></time>

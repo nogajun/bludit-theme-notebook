@@ -67,7 +67,7 @@
           <div class="entry__authorbox mt-4">
             <div class="row d-flex align-items-start">
               <div class="col-3 col-md-2">
-                <img src="<?php echo ($page->user('profilePicture') ? $page->user('profilePicture') : Theme::src('img/author.png')) ?>" alt="<?php echo $page->user('nickname'); ?>" width="80px" height="80px" class="rounded-circle">
+                <img src="<?php echo ($page->user('profilePicture') ? $page->user('profilePicture') : Theme::src('img/author.webp')) ?>" alt="<?php echo $page->user('nickname'); ?>" width="80px" height="80px" class="rounded-circle">
               </div>
               <div class="col">
                 <h5 class="h5 mb-0 fw-bold"><?php $language->p('Author') ?></h5>
