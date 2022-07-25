@@ -61,7 +61,7 @@
 <link rel="preload" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 <link rel="preload" type="text/css" href="<?php echo HTML_PATH_THEME_IMG . 'style.css'; ?>">
 <?php echo Theme::css('css/bootstrap.min.css'); ?>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 <?php echo Theme::css('css/style.css'); ?>
 <?php echo Theme::favicon('img/favicon.ico'); ?>
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo HTML_PATH_THEME_IMG . 'apple-touch-icon.webp'; ?>">
