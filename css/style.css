@@ -41,7 +41,7 @@ a:hover {
   color: var(--text-color);
 }
 
-.share-button a{
+.share-button a {
   color: #ccc;
   transition: all .2s ease-in-out;
 }

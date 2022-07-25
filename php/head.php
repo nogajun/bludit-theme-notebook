@@ -57,11 +57,8 @@
       url(<?php echo HTML_PATH_THEME . 'font/Lato-Bold.woff2'; ?>) format('woff2');
   }
 </style>
-<link rel="preload" type="text/css" href="<?php echo HTML_PATH_THEME_CSS . 'bootstrap.min.css'; ?>">
-<link rel="preload" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-<link rel="preload" type="text/css" href="<?php echo HTML_PATH_THEME_IMG . 'style.css'; ?>">
-<?php echo Theme::css('css/bootstrap.min.css'); ?>
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<link rel="preload" as="style" href="<?php echo HTML_PATH_THEME_CSS . 'bootstrap.min.css'; ?>" onload="this.rel='stylesheet'">
+<link rel="preload" as="style" href="<?php echo HTML_PATH_THEME_CSS . 'bootstrap-icons.css'; ?>" onload="this.rel='stylesheet'">
 <?php echo Theme::css('css/style.css'); ?>
 <?php echo Theme::favicon('img/favicon.ico'); ?>
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo HTML_PATH_THEME_IMG . 'apple-touch-icon.webp'; ?>">
