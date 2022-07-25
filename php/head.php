@@ -57,9 +57,13 @@
       url(<?php echo HTML_PATH_THEME . 'font/Lato-Bold.woff2'; ?>) format('woff2');
   }
 </style>
-<link rel="preload" as="style" href="<?php echo HTML_PATH_THEME_CSS . 'bootstrap.min.css'; ?>" onload="this.rel='stylesheet'">
-<link rel="preload" as="style" href="<?php echo HTML_PATH_THEME_CSS . 'bootstrap-icons.css'; ?>" onload="this.rel='stylesheet'">
-<?php echo Theme::css('css/style.css'); ?>
+<!--
+<link rel="preload" as="style" href="//cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" onload="this.rel='stylesheet'">
+<link rel="preload" as="style" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" onload="this.rel='stylesheet'">
+-->
+<link rel="preload" as="style" href="<?php echo DOMAIN_THEME_CSS . 'bootstrap.min.css'; ?>" onload="this.rel='stylesheet'">
+<link rel="preload" as="style" href="<?php echo DOMAIN_THEME_CSS . 'bootstrap-icons.css'; ?>" onload="this.rel='stylesheet'">
+<link rel="preload" as="style" href="<?php echo DOMAIN_THEME_CSS . 'style.css'; ?>" onload="this.rel='stylesheet'">
 <?php echo Theme::favicon('img/favicon.ico'); ?>
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo HTML_PATH_THEME_IMG . 'apple-touch-icon.webp'; ?>">
 <!-- Load Bludit Plugins: Site head -->
