@@ -31,7 +31,7 @@
         <?php foreach ($content as $page) : ?>
           <!-- card -->
           <article class="card col border-0">
-            <img class="card-img-top" src="<?php echo ($page->coverImage() ? $page->coverImage() : Theme::src('img/noimg.webp')) ?>" alt="">
+            <img class="card-img-top" src="<?php echo ($page->coverImage() ? $page->coverImage() : Theme::src('img/noimg.webp')) ?>" alt="" width="306px" height="160px">
             <section class="card-body p-0 pt-3">
               <h3 class="card-title h5 fw-bold"><a href="<?php echo $page->permalink(); ?>" class="stretched-link"><?php echo $page->title(); ?></a></h3>
               <p class="card-text">
