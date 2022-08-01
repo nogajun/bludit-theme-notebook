@@ -1,24 +1,8 @@
-<!-- hero -->
-<div class="py-1 py-md-3 py-xxl-5 text-center shadow header__hero">
-  <h1 class="py-1 py-md-3 py-xxl-5 text-white fw-bold"><?php echo $site->title() ?></h1>
-</div>
+<?php include(THEME_DIR_PHP . 'header.php'); ?>
 
 <div class="container-lg">
   <div class="row">
     <div class="col-12 col-xl-10 col-xxl-9 mx-auto">
-
-      <!-- menu -->
-      <aside class="pt-3 py-xxl-3 my-xxl-3 main__nav">
-        <nav class="nav nav-justified">
-          <?php
-          foreach ($categories->db as $key => $fields) {
-            if ($fields['list']) {
-              echo '<a href="' . DOMAIN_CATEGORIES . $key . '" class="nav-item fw-bold text-nowrap p-2">' . $fields['name'] . '</a>';
-            }
-          }
-          ?>
-        </nav>
-      </aside>
 
       <!-- card -->
       <main class="row row-cols-1 row-cols-md-2 row-cols-xl-3 my-3">
@@ -55,7 +39,6 @@
             </article>
           </div>
         <?php endforeach; ?>
-
         <!-- Load Bludit Plugins: Page End -->
         <?php Theme::plugins('pageEnd'); ?>
       </main>

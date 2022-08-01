@@ -6,11 +6,11 @@
 </head>
 
 <body>
+  <!-- navbar -->
+  <?php include(THEME_DIR_PHP . 'navbar.php'); ?>
+
   <!-- Load Bludit Plugins: Site Body Begin -->
   <?php Theme::plugins('siteBodyBegin'); ?>
-
-  <!-- header -->
-  <?php include(THEME_DIR_PHP . 'header.php'); ?>
 
   <?php
   switch ($WHERE_AM_I) {

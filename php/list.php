@@ -1,35 +1,21 @@
-  <!-- hero -->
-  <div class="py-1 py-md-3 py-xxl-5 text-center shadow-sm header__hero">
-    <h1 class="py-1 py-md-3 py-xxl-5 fw-bold"><?php echo $site->title(); ?></h1>
-  </div>
+<?php include(THEME_DIR_PHP . 'header.php'); ?>
 
-  <!-- card container -->
-  <div class="container">
-    <div class="row">
-      <div class="col col-xxl-9 mx-auto">
-        <!-- menu -->
-        <div class="nav-scroller pt-3 py-xxl-3 my-xxl-3 main__nav">
-          <nav class="nav d-flex justify-content-around">
-            <?php
-            foreach ($categories->db as $key => $fields) {
-              if ($fields['list']) {
-                echo '<a href="' . DOMAIN_CATEGORIES . $key . '" class="p-2 fw-bold">' . $fields['name'] . '</a>';
-              }
-            }
-            ?>
-          </nav>
-        </div>
+<div class="container-lg">
+  <div class="row">
+    <div class="col-12 col-xl-10 col-xxl-9 mx-auto">
 
-        <!-- main -->
-        <main class="my-3">
-          <?php if (empty($content)) {
-            $language->p('Page not found');
-          } ?>
-          <!-- Load Bludit Plugins: Page Begin -->
-          <?php Theme::plugins('pageBegin'); ?>
-          <?php foreach ($content as $page) : ?>
-            <!-- card -->
-            <article class="card my-3 border-0">
+      <!-- main -->
+      <main class="row row-cols-1 my-3">
+        <?php if (empty($content)) {
+          $language->p('Page not found');
+        } ?>
+        <!-- Load Bludit Plugins: Page Begin -->
+        <?php Theme::plugins('pageBegin'); ?>
+
+        <?php foreach ($content as $page) : ?>
+          <!-- card -->
+          <div class="col mb-3 mb-xl-4">
+            <article class="card h-100 border-0">
               <div class="row d-flex align-items-stretch g-0">
                 <div class="col-md-3">
                   <img class="card-img-list" src="<?php echo ($page->coverImage() ? $page->coverImage() : Theme::src('img/noimg.webp')) ?>" alt="">
@@ -57,13 +43,14 @@
                 </div>
               </div>
             </article>
-          <?php endforeach; ?>
-          <!-- Load Bludit Plugins: Page End -->
-          <?php Theme::plugins('pageEnd'); ?>
-        </main>
+          </div>
+        <?php endforeach; ?>
+        <!-- Load Bludit Plugins: Page End -->
+        <?php Theme::plugins('pageEnd'); ?>
+      </main>
 
-        <?php include(THEME_DIR_PHP . 'pagenation.php'); ?>
+      <?php include(THEME_DIR_PHP . 'pagenation.php'); ?>
 
-      </div>
     </div>
   </div>
+</div>
