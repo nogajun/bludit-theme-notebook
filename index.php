@@ -31,7 +31,7 @@
   <!-- footer -->
   <?php include(THEME_DIR_PHP . 'footer.php'); ?>
 
-  <script defer src="<?php echo HTML_PATH_THEME_JS . 'bootstrap.bundle.min.js' ?>"></script>
+  <script defer src="<?php echo HTML_PATH_THEME_JS . 'bootstrap.min.js' ?>"></script>
 
   <!-- Load Bludit Plugins: Site Body End -->
   <?php Theme::plugins('siteBodyEnd'); ?>
