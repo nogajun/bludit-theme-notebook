@@ -1,5 +1,5 @@
 <?php if (Paginator::numberOfPages() > 1) : ?>
-  <nav class="paginator text-center my-5 mx-auto">
+  <nav class="paginator text-center my-3 mx-auto">
     <ul class="pagination justify-content-center">
       <!-- Previous button -->
       <?php if (Paginator::showPrev()) : ?>

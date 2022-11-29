@@ -27,7 +27,7 @@
               <time datetime="<?php echo $page->dateRaw('c') ?>" class="text-muted"><?php echo $page->date(); ?></time>
             </div>
             <!-- share button -->
-            <div class="col share-button">
+            <div class="col share-button g-0">
               <p class="h5 text-end m-0 p-0 align-bottom">
                 <a href="https://twitter.com/share?url=<?php echo $page->permalink(); ?>&text=<?php echo $page->title(); ?>+%7C+<?php echo $site->title(); ?>%3A+" rel="nofollow" target="_blank" class="share-button-twitter"><i class="bi bi-twitter"></i></a>
                 <a href="//www.facebook.com/share.php?u=<?php echo $page->permalink(); ?>" rel="nofollow" target="_blank" class="ms-1 ms-md-2 share-button-facebook"><i class="bi bi-facebook"></i></a>
