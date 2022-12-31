@@ -61,6 +61,7 @@
 </style>
 <link rel="stylesheet" href="<?php echo HTML_PATH_THEME_CSS . 'bootstrap.min.css'; ?>">
 <link rel="stylesheet" href="<?php echo HTML_PATH_THEME_CSS . 'bootstrap-icons.css'; ?>">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
 <link rel="stylesheet" href="<?php echo HTML_PATH_THEME_CSS . 'style.css'; ?>">
 <?php echo Theme::favicon('img/favicon.ico'); ?>
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo HTML_PATH_THEME_IMG . 'apple-touch-icon.webp'; ?>">

@@ -126,7 +126,6 @@ a:hover {
   object-fit: cover;
 }
 
-
 .card-body,
 .card-footer,
 .card-footer small {
@@ -150,7 +149,19 @@ a:hover {
 }
 
 .entry__content {
-  font-size: 1.125rem;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+@media screen and (min-width: 578px){
+  .entry__content {
+    font-size: 1.125rem;
+    line-height: 2;
+  }
+  .entry__content img {
+    margin: 1rem;
+  }
+
 }
 
 .entry__content h1,
@@ -201,7 +212,6 @@ a:hover {
   text-justify: inter-character;
   word-break: break-all;
   overflow-wrap: break-word;
-  line-height: 2;
   margin-bottom: 1em;
 }
 
@@ -289,29 +299,16 @@ a:hover {
   margin: 0 0.2em;
 }
 
-.entry__content ul,
-.entry__content ol {
-  margin-bottom: 0.5rem;
-}
-
-.entry__content ul li,
-.entry__content ol li {
-  margin: 0.5rem;
-}
-
-.entry__content dd {
-  margin-left: 2em;
-}
-
 .entry__content pre {
-  font-family: Inconsolata, Monaco, Consolas, Courier New, Courier, monospace, sans-serif;
-  font-size: 0.9rem;
-  color: #fff;
-  background-color: #333;
-  margin: 1.5em 1em;
-  padding: 1em;
-  white-space: pre-wrap;
+  white-space: pre;
   tab-size: 2;
+  color: #444;
+  background-color: #F3F3F3;
+}
+
+.entry__content pre code {
+  display: block;
+  padding: 1em;
 }
 
 .entry__content table {

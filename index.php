@@ -32,7 +32,9 @@
   <?php include(THEME_DIR_PHP . 'footer.php'); ?>
 
   <script defer src="<?php echo HTML_PATH_THEME_JS . 'bootstrap.min.js' ?>"></script>
-
+  <!-- highlight.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
   <!-- Load Bludit Plugins: Site Body End -->
   <?php Theme::plugins('siteBodyEnd'); ?>
 </body>
