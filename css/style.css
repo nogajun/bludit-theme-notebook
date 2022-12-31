@@ -82,6 +82,11 @@ a:hover {
   color: var(--sns-github);
 }
 
+/* --------------------------------------------------------- */
+
+.navbar-light .navbar-toggler {
+  border-color: rgba(0, 0, 0, 0);
+}
 
 /* --------------------------------------------------------- */
 
@@ -153,11 +158,12 @@ a:hover {
   line-height: 1.8;
 }
 
-@media screen and (min-width: 578px){
+@media screen and (min-width: 578px) {
   .entry__content {
     font-size: 1.125rem;
     line-height: 2;
   }
+
   .entry__content img {
     margin: 1rem;
   }
