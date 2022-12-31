@@ -64,7 +64,7 @@
             <?php endif; ?>
           </ul>
 
-          <div class="entry__authorbox mt-4">
+          <div class="entry__authorbox mt-5">
             <div class="row d-flex align-items-start">
               <div class="col-3 col-md-2">
                 <img src="<?php echo ($page->user('profilePicture') ? $page->user('profilePicture') : Theme::src('img/author.webp')) ?>" alt="<?php echo $page->user('nickname'); ?>" width="80px" height="80px" class="rounded-circle">
