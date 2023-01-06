@@ -24,37 +24,37 @@
 <link rel='dns-prefetch' href='//s.w.org' />
 <style type="text/css">
   @font-face {
-    font-family: 'Noto Sans JP Regular';
+    font-family: 'Noto Sans JP';
     font-display: fallback;
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     src: local("Noto Sans CJK JP"),
-      url(<?php echo HTML_PATH_THEME . 'font/NotoSansCJKjp-Regular.woff2'; ?>) format('woff2');
+      url(<?php echo HTML_PATH_THEME . 'font/NotoSansJP-Light.woff2'; ?>) format('woff2');
   }
 
   @font-face {
-    font-family: 'Noto Sans JP Bold';
+    font-family: 'Noto Sans JP';
     font-display: fallback;
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     src: local("Noto Sans CJK JP"),
-      url(<?php echo HTML_PATH_THEME . 'font/NotoSansCJKjp-Bold.woff2'; ?>) format('woff2');
+      url(<?php echo HTML_PATH_THEME . 'font/NotoSansJP-Bold.woff2'; ?>) format('woff2');
   }
 
   @font-face {
-    font-family: 'Lato Regular';
+    font-family: 'Lato';
     font-display: fallback;
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     src: local("Lato"),
       url(<?php echo HTML_PATH_THEME . 'font/Lato-Regular.woff2'; ?>) format('woff2');
   }
 
   @font-face {
-    font-family: 'Lato Bold';
+    font-family: 'Lato';
     font-display: fallback;
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     src: local("Lato"),
       url(<?php echo HTML_PATH_THEME . 'font/Lato-Bold.woff2'; ?>) format('woff2');
   }
