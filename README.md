@@ -6,10 +6,6 @@ Notebook is a [Bludit CMS](https://www.bludit.com/) theme similar to note (web s
 
 * Bludit v3.1.x (bludit v 4.0 is not supported.)
 
-## Author
-
-* Jun Nogata <nogajun+bludit@gmail.com>
-
 ## License
 
 The MIT License.
