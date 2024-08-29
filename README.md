@@ -1,3 +1,8 @@
+> [!CAUTION]
+> The author is no longer using Bludit and will archive this theme. If you want to change it, please fork it.
+>
+> 作者がBluditを使わなくなったので、このテーマをアーカイブ化します。変更したい人はフォークしてください。
+
 # Notebook theme for Bludit CMS
 
 Notebook is a [Bludit CMS](https://www.bludit.com/) theme similar to note (web service).
